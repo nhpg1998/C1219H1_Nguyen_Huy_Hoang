@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Số tiền :
+    <input type="text" id="soTien">
+    Từ :
+    <select id="chonTu">
+        <option value="VN">Viet Nam</option>
+        <option value="US">USD</option>
+    </select>
+    Sang :
+    <select id="chonSang">
+        <option value="VN">Viet Nam</option>
+        <option value="US">USD</option>
+    </select>
+    <button onclick="chuyenDoi();return false"> Chuyển Đổi</button>
+</form>
+<p id="ketQua"></p>
+<script>
+    function chuyenDoi() {
+        var soTien = document.getElementById("soTien").value;
+        var chonTu = document.getElementById("chonTu").value;
+        var chonSang = document.getElementById("chonSang").value;
+        var ketQua = document.getElementById("ketQua");
+        if (chonTu == "VN" && chonSang == "US") {
+            ketQua.innerText = soTien / 23000;
+        }
+        if (chonTu == "US" && chonSang == "VN") {
+            ketQua.innerText = soTien * 23000;
+        }
+
+
+    }
+</script>
+</body>
+</html>
