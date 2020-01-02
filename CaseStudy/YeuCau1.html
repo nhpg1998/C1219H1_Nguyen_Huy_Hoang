@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tenKhachHang = prompt("Nhap Ten Khach Hang: ");
+    let soCMND = prompt("Nhap So Chung Minh: ");
+    let ngaySinh = prompt("Nhap Ngay Sinh: ");
+    let email = prompt("Nhap Email: ");
+    let diaChi = prompt("Nhap Dia Chi: ");
+    let loaiKhachHang = prompt("Nhap Loai Khach Hang: ");
+    let giamGia = parseInt(prompt("Nhap Giam Gia: "));
+    let soLuongDikem = prompt("Nhap So Luong Di Kem: ");
+    let soNgayThue = parseInt(prompt("Nhap So Ngay Thue: "));
+    let loaiDichVu = prompt("Nhap Loai Dich Vu: ");
+    let loaiPhongThue = prompt("Nhap Loai Phong Thue");
+    let tongThanhToan;
+    if (loaiDichVu == 'villa'){
+        tongThanhToan = 500 * soNgayThue * (1 - giamGia / 100);
+    }
+    if (loaiDichVu == 'house'){
+        tongThanhToan = 300 * soNgayThue * (1 - giamGia / 100);
+    }
+    if (loaiDichVu == 'Room'){
+        tongThanhToan = 100 * soNgayThue * (1 - giamGia / 100);
+    }
+    alert("\n Ten Khanh Hang: " + tenKhachHang +
+            "\n So CMND: " + soCMND +
+            "\n Ngay Sinh: " + ngaySinh +
+            "\n Email: " + email +
+            "\n Dia Chi: " + diaChi +
+            "\n Loai Khach Hang: " + loaiKhachHang +
+            "\n Giam Gia: " + giamGia +
+            "\n So Luong Di Kem: " + soLuongDikem +
+            "\n So Ngay Thue: " + soNgayThue +
+            "\n Loai Dich Vu: " + loaiDichVu +
+            "\n Loai Phong Thue: " + loaiPhongThue +
+            "\n Tong Thanh Toan: " + tongThanhToan
+
+    );
+</script>
+</body>
+</html>
