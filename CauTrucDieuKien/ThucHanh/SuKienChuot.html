@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <img id="traiTim"
+         src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Love_Heart_symbol.svg" style="width: 100px">
+    <p> click button below to move  the image to right</p>
+    <input type="button" value="click me" onclick="moveright();">
+
+
+
+</form>
+<script>
+    let hinhAnh = null;
+    hinhAnh = document.getElementById("traiTim");
+    function init() {
+        hinhAnh = document.getElementById("traiTim");
+        hinhAnh.style.position = 'relative';
+        hinhAnh.style.left = '0px';
+
+    }
+    function moveright() {
+        hinhAnh.style.left = parseInt(hinhAnh.style.left) + 10 + 'px';
+    }
+
+    window.onload = init;
+</script>
+</body>
+</html>
