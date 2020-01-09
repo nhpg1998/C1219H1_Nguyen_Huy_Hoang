@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Từ cần tìm kiếm:
+    <input type="text" id="tuTimKiem">
+    từ:
+    <select id="tiengAnh">
+        <option value="VN">Việt Nam</option>
+        <option value="EL">English</option>
+    </select>
+    sang:
+    <select id="tiengViet">
+        <option value="VN">Việt Nam</option>
+        <option value="EL">English</option>
+    </select>
+    <button onclick="chuyenSang();return false ">Chuyển Sang</button>
+</form>
+<p id="ketQua"></p>
+<script>
+    function chuyenSang() {
+        let tuTimKiem = document.getElementById("tuTimKiem").value;
+        let tiengAnh = document.getElementById["agree","anounce","addmit","banana","grapefruit"];
+        let tiengViet = document.getElementById["Đồng ý", "Thông báo" , "Thừa nhận", "Chuối", "Bưởi"];
+        let ketQua = document.getElementById("ketQua");
+        if (tiengAnh == "EL" && tiengViet == "VN") {
+            ketQua.innerText = tuTimKiem;
+        }
+    }
+</script>
+</body>
+</html>
